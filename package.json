@@ -1,0 +1,36 @@
+{
+  "name": "redux-json-schema",
+  "version": "1.0.0",
+  "description": "Validate your Redux state tree with JSON Schema",
+  "main": "lib/main.js",
+  "scripts": {
+    "build": "rollup -c",
+    "watch": "rollup -wc",
+    "test": "flow && rollup -c && mocha && eslint_d --cache src test"
+  },
+  "keywords": [
+    "json-schema",
+    "json",
+    "schema",
+    "redux",
+    "validation"
+  ],
+  "author": "Sam Gentle <sam@samgentle.com>",
+  "license": "MIT",
+  "dependencies": {
+    "ajv": "^4.6.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^6.1.2",
+    "eslint-config-prismatik": "^2.2.0",
+    "eslint-plugin-flowtype": "^2.16.0",
+    "eslint_d": "^4.0.1",
+    "flow-bin": "^0.31.1",
+    "mocha": "^3.0.2",
+    "redux": "^3.6.0",
+    "rollup": "^0.34.10",
+    "rollup-plugin-buble": "^0.13.0",
+    "rollup-plugin-flow": "^1.0.1",
+    "rollup-watch": "^2.5.0"
+  }
+}
